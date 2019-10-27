@@ -1,0 +1,20 @@
+{% extends "base/ad.html" %}
+
+
+{% block live %}
+<h1>Thanks for accepting this HIT.</h1>
+<p>
+    By clicking the following URL link, you will be taken to the experiment,
+    including complete instructions and an informed consent agreement.
+</p>
+<p>
+    We can add or change the text, customize the button text, etc.
+</p>
+<div class="alert alert-warning">
+    <b>Warning</b>: Please disable pop-up blockers before continuing.
+</div>
+
+<button type="button" id="begin-button" class="btn btn-primary btn-lg">
+Proceed to the consent form (you still have a chance to back out.)
+</button>
+{% endblock live %}

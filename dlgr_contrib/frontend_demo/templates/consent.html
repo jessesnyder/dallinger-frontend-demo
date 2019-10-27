@@ -1,0 +1,20 @@
+{% extends "base/consent.html" %}
+
+{% block consent_text %}
+In the course of this experiment, you may be confronted by images of:
+<ul>
+    <li>Cuddling kittens</li>
+    <li>Pouncing puppies</li>
+    <li>Cavorting koalas</li>
+</ul>.
+{% endblock %}
+
+{% block consent_button %}
+    <!-- custom consent button/action -->
+    <button type="button" id="consent" class="btn btn-primary btn-lg">I reluctantly agree 🤨</button>
+{% endblock %}
+
+{% block libs %}
+    {{ super() }}
+    <script src="/static/scripts/consent.js" type="text/javascript"> </script>
+{% endblock %}

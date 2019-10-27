@@ -1,0 +1,21 @@
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 24px;
+}
+
+.btn-primary {
+    background-color: #42ca85;
+    border-color: #5eda6b;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #238e2b;
+    border-color: #5eda6b;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #826560;
+}
+
+.consent_div {
+    font-size: x-large;
+}
