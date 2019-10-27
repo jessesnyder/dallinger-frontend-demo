@@ -50,6 +50,7 @@ dlgr_contrib/frontend_demo/data/*
 *.egg-info/*
 .cache
 .cache/*
+.pytest_cache/*
 
 docs/build/*
 dlgr/griduniverse/dump.rdb
