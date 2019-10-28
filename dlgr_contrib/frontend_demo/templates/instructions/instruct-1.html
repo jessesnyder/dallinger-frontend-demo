@@ -5,19 +5,35 @@
         <hr>
 
         <p>In this experiment, you will click a button.</p>
+        <p>But first, we must confirm that you can distinguish between a wombat and a dump truck (Kipper?), based on photographs.</p>
 
+        <h2>A</h2>
+        <img src="{{ server_location }}/static/images/dumptruck.jpg" />
+
+        <h2>B</h2>
+        <img src="{{ server_location }}/static/images/wombat.jpg"/>
+        <hr>
+        <label for="quiz">Which is the wombat, A or B?</label>
+        <select id="quiz" name="quiz">
+            <option value="">Select one</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
         <hr>
 
         <div>
             <div class="row">
-                <div class="col-xs-10"></div>
-                <div class="col-xs-2">
-                    <button type="button"
-                            class="btn btn-success btn-lg"
-                            onClick="dallinger.allowExit(); dallinger.goToPage('instructions/instruct-ready');">
-                    So far, so good...</button>
-                </div>
+                <button type="button"
+                        id="quiz-submit"
+                        class="btn btn-success btn-lg">
+                I know this!</button>
             </div>
         </div>
     </div>
+{% endblock %}
+
+
+{% block libs %}
+    {{ super() }}
+    <script src="/static/scripts/instructions.js" type="text/javascript"> </script>
 {% endblock %}
